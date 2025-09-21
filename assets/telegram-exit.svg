@@ -1,0 +1,58 @@
+<svg width="1024" height="1024" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="exit-bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) scale(300)">
+      <stop offset="0" stop-color="#102434" />
+      <stop offset="0.65" stop-color="#071423" />
+      <stop offset="1" stop-color="#01070f" />
+    </radialGradient>
+    <linearGradient id="exit-light" x1="120" y1="40" x2="392" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7dff6b" />
+      <stop offset="1" stop-color="#4bff95" />
+    </linearGradient>
+    <filter id="exit-shadow" x="52" y="8" width="408" height="496" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" />
+      <feOffset dy="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.094 0 0 0 0 1 0 0 0 0 0.459 0 0 0 0.48 0" />
+      <feBlend in2="BackgroundImageFix" result="shadow" />
+      <feBlend in="SourceGraphic" in2="shadow" result="shape" />
+    </filter>
+    <filter id="bill-glow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.49 0 0 0 0 1 0 0 0 0 0.43 0 0 0 0.6 0" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="url(#exit-bg)" />
+  <g opacity="0.32" filter="url(#bill-glow)">
+    <g fill="#0f331f">
+      <rect x="74" y="76" width="82" height="42" rx="10" />
+      <rect x="348" y="90" width="72" height="36" rx="9" />
+      <rect x="118" y="180" width="88" height="44" rx="11" />
+      <rect x="336" y="188" width="78" height="40" rx="10" />
+      <rect x="80" y="278" width="74" height="38" rx="9" />
+      <rect x="366" y="288" width="84" height="44" rx="11" />
+      <rect x="124" y="360" width="90" height="46" rx="12" />
+      <rect x="328" y="370" width="86" height="42" rx="11" />
+    </g>
+  </g>
+  <g opacity="0.55" fill="#123d24">
+    <rect x="94" y="108" width="86" height="44" rx="11" />
+    <rect x="322" y="126" width="90" height="46" rx="11" />
+    <rect x="110" y="234" width="94" height="48" rx="12" />
+    <rect x="330" y="244" width="86" height="44" rx="11" />
+    <rect x="104" y="328" width="82" height="42" rx="11" />
+    <rect x="346" y="340" width="92" height="48" rx="12" />
+  </g>
+  <g filter="url(#exit-shadow)">
+    <path d="M256 32L404 100V240C404 324 340 416 256 460C172 416 108 324 108 240V100L256 32Z" fill="rgba(8,21,35,0.88)" stroke="url(#exit-light)" stroke-width="6" />
+    <path d="M256 56L384 112V240C384 312 330 392 256 430C182 392 128 312 128 240V112L256 56Z" fill="rgba(7,19,31,0.92)" stroke="rgba(125,255,107,0.52)" stroke-width="3" />
+  </g>
+  <circle cx="256" cy="242" r="120" fill="rgba(9,25,37,0.85)" stroke="rgba(125,255,107,0.55)" stroke-width="4" />
+  <circle cx="256" cy="242" r="96" fill="#071724" stroke="rgba(125,255,107,0.35)" stroke-width="2" />
+  <text x="256" y="214" text-anchor="middle" font-family="'Manrope','Segoe UI',sans-serif" font-size="78" font-weight="700" fill="#7dff6b">AML</text>
+  <g filter="url(#exit-shadow)">
+    <text x="256" y="288" text-anchor="middle" font-family="'Manrope','Segoe UI',sans-serif" font-size="64" font-weight="800" fill="#f1fff6">NC</text>
+  </g>
+  <circle cx="312" cy="290" r="40" fill="#071725" stroke="#00d2ff" stroke-width="3" />
+  <text x="312" y="302" text-anchor="middle" font-family="'Manrope','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#00d2ff">USDT</text>
+</svg>

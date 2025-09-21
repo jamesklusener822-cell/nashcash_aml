@@ -1,0 +1,39 @@
+<svg width="1024" height="1024" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="entry-bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) scale(280)">
+      <stop offset="0" stop-color="#11263a" />
+      <stop offset="0.55" stop-color="#0a1527" />
+      <stop offset="1" stop-color="#02060f" />
+    </radialGradient>
+    <radialGradient id="entry-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 180) scale(220)">
+      <stop offset="0" stop-color="#7dff6b" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#7dff6b" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="entry-shield" x1="132" y1="64" x2="380" y2="428" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7dff6b" />
+      <stop offset="1" stop-color="#4bff95" />
+    </linearGradient>
+    <filter id="entry-shadow" x="60" y="12" width="392" height="488" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" />
+      <feOffset dy="12" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.078 0 0 0 0 1 0 0 0 0 0.486 0 0 0 0.55 0" />
+      <feBlend in2="BackgroundImageFix" result="shadow" />
+      <feBlend in="SourceGraphic" in2="shadow" result="shape" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="url(#entry-bg)" />
+  <rect width="512" height="512" rx="48" fill="url(#entry-glow)" />
+  <g filter="url(#entry-shadow)">
+    <path d="M256 36L404 102V236C404 320 340 408 256 452C172 408 108 320 108 236V102L256 36Z" fill="rgba(9,22,34,0.85)" stroke="url(#entry-shield)" stroke-width="6" />
+    <path d="M256 60L380 114V236C380 308 328 386 256 422C184 386 132 308 132 236V114L256 60Z" fill="rgba(7,19,32,0.9)" stroke="rgba(125,255,107,0.6)" stroke-width="3" />
+  </g>
+  <circle cx="256" cy="238" r="118" fill="rgba(9,26,38,0.85)" stroke="rgba(125,255,107,0.55)" stroke-width="4" />
+  <circle cx="256" cy="238" r="94" fill="#071725" stroke="rgba(125,255,107,0.35)" stroke-width="2" />
+  <text x="256" y="210" text-anchor="middle" font-family="'Manrope','Segoe UI',sans-serif" font-size="78" font-weight="700" fill="#7dff6b">AML</text>
+  <g filter="url(#entry-shadow)">
+    <text x="256" y="284" text-anchor="middle" font-family="'Manrope','Segoe UI',sans-serif" font-size="64" font-weight="800" fill="#f1fff6">NC</text>
+  </g>
+  <circle cx="312" cy="284" r="38" fill="#071725" stroke="#00d2ff" stroke-width="3" />
+  <text x="312" y="296" text-anchor="middle" font-family="'Manrope','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#00d2ff">USDT</text>
+</svg>
